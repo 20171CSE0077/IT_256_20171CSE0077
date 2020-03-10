@@ -3,15 +3,40 @@
 <style>
 p.dotted{border-style:dotted;border-width:10px;border-color:red;}
 p.dashed{border-style:dashed;border-width:thick;border-color:green;}
-p.solid{border-style:solid;}
-p.double{border-style:double;}
-p.groove{border-style:groove;}
-p.ridge{border-style:ridge;}
-p.inset{border-style:inset;}
-p.outset{border-style:outset;}
-p.none{border-style:none;}
-p.hidden{border-style:hidden;}
+p.solid{border-style:solid;border-width:thick;border-color:green;margin:25px 50px 75px 100px;}
+p.double{border-style:double;border-width:thick;border-color:green;}
+p.groove{border-style:groove;border-width:thick;border-color:green;width:100px;margin:auto;}
+p.ridge{border-style:ridge;border-width:thick;border-color:green;padding:25px 50px 75px 100px;}
+p.inset{border-style:inset;border-width:thick;border-color:green;}
+p.outset{border-style:outset;border-width:thick;border-color:green;}
+p.none{border-style:none;border-width:thick;border-color:green;}
+p.hidden{border-style:hidden;border-width:thick;border-color:green;}
 p.mix{border-style:dotted dashed solid double;border-width:5px 10px 7px 20px;border-color:red blue green yellow;}
+div{width:300px;margin:auto; border:1px solid red;}
+img{border:10px solid red;height:250px;width:250px;opacity:0.5;float:right;}
+span.a{display:inline;
+width:100px;
+height:100px;
+padding:5px;
+border:1px solid blue;
+background-color:yellow;
+}
+
+span.b{display:inline-block;
+width:100px;
+height:100px;
+padding:5px;
+border:1px solid blue;
+background-color:yellow;
+}
+
+span.c{display:block;
+width:100px;
+height:100px;
+padding:5px;
+border:1px solid blue;
+background-color:yellow;
+}
 
 </style>
 </head>
@@ -24,8 +49,14 @@ p.mix{border-style:dotted dashed solid double;border-width:5px 10px 7px 20px;bor
 <p class=ridge>heloooo this is meee happy holllliiiiii</p>
 <p class=inset>heloooo this is meee happy holllliiiiii</p>
 <p class=outset>heloooo this is meee happy holllliiiiii</p>
+<div>MArgin auto</div>
+<img src="/home/6CSE2/2071CSE0077/css/index.jpeg" alt="image"/>
 <p class=none>heloooo this is meee happy holllliiiiii</p>
 <p class=hidden>heloooo this is meee happy holllliiiiii</p>
 <p class=mix>heloooo this is meee happy holllliiiiii</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.<span class="a">HELLO WORLD</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. </p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.<span class="b">HELLO WORLD</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. </p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.<span class="c">HELLO WORLD</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. </p>
+
 </body>
 </html>
