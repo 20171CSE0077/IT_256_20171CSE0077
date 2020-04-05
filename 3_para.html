@@ -1,0 +1,73 @@
+<html>
+    <head>Stack Ordering with moveback
+        <title>Stack Ordering with moveback</title>
+            
+            <style type="text/css">
+                #layer1
+                {
+                    border:solid thick black;
+                    background-color:violet;
+                    padding:10px;
+                    width:300px;
+                    height:200px;
+                    position:absolute;
+                    top:100px;
+                    left:200px;
+                    z-index:1;
+                }
+            #layer2
+                {
+                    border:solid thick black;
+                    background-color:yellow;
+                    padding:10px;
+                    width:300px;
+                    height:200px;
+                    position:absolute;
+                    top:120px;
+                    left:220px;
+                    z-index:2;
+                }
+            #layer3
+                {
+                    border:solid thick black;
+                    background-color:royalblue;
+                    padding:10px;
+                    width:300px;
+                    height:200px;
+                    position:absolute;
+                    top:140px;
+                    left:240px;
+                    z-index:3;
+                }
+            </style>
+    </head>
+    <body>
+        <script type=text/javascript>
+            var topLayer="layer3";
+            var origpos;
+            
+            function mover(toTop,pos)
+                {
+                    document.getElementById(toTop).style.zIndex="4";
+                    topLayer=toTop;
+                    origpos=pos;
+                }
+            
+            function moveBack()
+                {
+                    document.getElementById(topLayer).style.zIndex=origpos;
+                }
+        </script>
+        <p id=layer1 onMouseOver=mover('layer1','1'); onMouseOut=moveBack()>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
+
+            Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.</p>
+        <p id=layer2 onMouseOver=mover('layer2','2'); onMouseOut=moveBack()>The best way to prevent and slow down transmission is be well informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face. 
+
+            The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing into a flexed elbow).</p>
+        <p id=layer3 onMouseOver=mover('layer3','3'); onMouseOut=moveBack()>Do
+            Wash your hands regularly for 20 seconds, with soap and water or alcohol-based hand rub
+            Cover your nose and mouth with a disposable tissue or flexed elbow when you cough or sneeze
+            Avoid close contact (1 meter or 3 feet) with people who are unwell
+            Stay home and self-isolate from others in the household if you feel unwell</p>
+    </body>
+ </html>
